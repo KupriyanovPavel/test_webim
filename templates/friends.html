@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Друзья</title>
+    <link type="text/css" href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="border">
+        <div class="user">
+            <a href="http://vk.com/id{{ user.id }}">
+                <p><img class="round" src="{{ user.photo_100 }}">{{ user.first_name }} {{ user.last_name }}</p>
+            </a>
+        </div>
+        {% for friend in friends %}
+            <div class="friend">
+                <a href="http://vk.com/id{{ friend.id }}">
+                    <p><img class="round" src="{{ friend.photo_50 }}">{{ friend.first_name }} {{ friend.last_name }}</p>
+                </a>
+            </div>
+        {% endfor %}
+        <div class="center">
+            <a href="/logout" class="but">Выйти</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.center{
+    text-align: center;
+    padding-top: 5%;
+}
+
+a.but {
+    display: inline-block;
+    color: white;
+    background-color: cornflowerblue;
+    font-weight: 700;
+    font-size: 36px;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border-radius: 4px;
+}
+a.but:hover {
+    background: dodgerblue;
+}
+a.but:active {
+    background: blue;
+}
+
+.border{
+    border: 2px solid dodgerblue;
+    border-radius: 20px;
+    margin: 5% 20% 20% 20%;
+    padding: 2%;
+}
+
+.friend{
+    border-bottom: 2px solid lightgray;
+}
+
+.friend p{
+    font-size: 24px;
+}
+
+.user{
+    border-bottom: 2px solid dodgerblue;
+}
+
+.user p{
+    font-size: 36px;
+    text-align: center;
+}
+
+.round{
+    border-radius: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+

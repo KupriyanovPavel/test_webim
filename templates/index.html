@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link type="text/css" href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+<script>
+    function redirect(){
+        document.location = '{{ url|safe }}';
+    }
+</script>
+    <div class="center">
+        <a onclick="redirect()" class="but">Авторизация</a>
+    </div>
+</body>
+</html>
